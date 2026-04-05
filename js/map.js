@@ -21,7 +21,7 @@
 
     ymaps.ready(function () {
       try {
-        var center = [55.760837, 37.618423];
+        var center = [55.760236, 37.612991];
         var map = new ymaps.Map(
           "map",
           {
