@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Репертуар — МХАТ имени Чехова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="repertoire">
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner" role="status" aria-label="Загрузка"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="resources/images/logo.png" width="56" height="56" alt="Логотип МХАТ имени Чехова" loading="eager" />
+          <span class="site-logo__text">МХАТ имени А.П.&nbsp;Чехова</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html" data-nav="home">Главная</a></li>
+            <li><a class="nav__link" href="repertoire.html" data-nav="repertoire">Репертуар</a></li>
+            <li><a class="nav__link" href="about.html" data-nav="about">О театре</a></li>
+            <li><a class="nav__link" href="contacts.html" data-nav="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title reveal">Репертуар и цены</h1>
+          <p class="text-block reveal" style="text-align: center; margin-bottom: 32px">
+            Актуальные цены на билеты по зонам зала. Данные загружаются из репертуара театра.
+          </p>
+
+          <div class="table-wrap reveal">
+            <table class="repertoire-table">
+              <thead>
+                <tr>
+                  <th scope="col">Название спектакля</th>
+                  <th scope="col">Жанр</th>
+                  <th scope="col">Партер</th>
+                  <th scope="col">Амфитеатр</th>
+                  <th scope="col">Балкон</th>
+                </tr>
+              </thead>
+              <tbody id="repertoire-table-body"></tbody>
+            </table>
+          </div>
+
+          <h2 class="section__title reveal">Постановки</h2>
+          <div class="repertoire-cards" id="repertoire-cards"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="site-footer__brand">МХАТ имени А.П.&nbsp;Чехова</p>
+          <p class="footer-contacts" id="footer-contacts">Загрузка контактов…</p>
+        </div>
+        <p><a href="contacts.html">Полные контакты и карта</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

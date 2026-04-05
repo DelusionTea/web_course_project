@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>МХАТ имени Чехова — Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner" role="status" aria-label="Загрузка"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="resources/images/logo.png" width="56" height="56" alt="Логотип МХАТ имени Чехова" loading="eager" />
+          <span class="site-logo__text">МХАТ имени А.П.&nbsp;Чехова</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html" data-nav="home">Главная</a></li>
+            <li><a class="nav__link" href="repertoire.html" data-nav="repertoire">Репертуар</a></li>
+            <li><a class="nav__link" href="about.html" data-nav="about">О театре</a></li>
+            <li><a class="nav__link" href="contacts.html" data-nav="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero">
+        <div class="hero__content reveal">
+          <h1>Добро пожаловать в МХАТ</h1>
+          <p class="hero__lead">Театральное искусство с 1898 года</p>
+          <p style="margin-top: 24px">
+            <a class="btn" href="repertoire.html">Афиша и билеты</a>
+            <a class="btn btn--outline" href="#about-preview" style="margin-left: 12px">Узнать больше</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="about-preview">
+        <div class="container">
+          <h2 class="section__title reveal">О театре</h2>
+          <div class="text-block reveal">
+            <p id="main-description">Загрузка описания…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section video-section">
+        <div class="container">
+          <h2 class="section__title reveal">Видео-презентация</h2>
+          <div class="video-wrap reveal">
+            <video controls preload="metadata" poster="resources/images/hero-image.jpg">
+              <source src="videos/theater-promo.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section announcements" id="announcements">
+        <div class="container">
+          <h2 class="section__title reveal">Анонсы спектаклей</h2>
+          <div class="announcements__grid" id="announcements-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="site-footer__brand">МХАТ имени А.П.&nbsp;Чехова</p>
+          <p class="footer-contacts" id="footer-contacts">Загрузка контактов…</p>
+        </div>
+        <p><a href="contacts.html">Полные контакты и карта</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

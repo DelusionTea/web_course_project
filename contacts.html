@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — МХАТ имени Чехова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Для работы карты добавьте параметр apikey=ВАШ_КЛЮЧ при необходимости -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
+  </head>
+  <body data-page="contacts">
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner" role="status" aria-label="Загрузка"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="resources/images/logo.png" width="56" height="56" alt="Логотип МХАТ имени Чехова" loading="eager" />
+          <span class="site-logo__text">МХАТ имени А.П.&nbsp;Чехова</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html" data-nav="home">Главная</a></li>
+            <li><a class="nav__link" href="repertoire.html" data-nav="repertoire">Репертуар</a></li>
+            <li><a class="nav__link" href="about.html" data-nav="about">О театре</a></li>
+            <li><a class="nav__link" href="contacts.html" data-nav="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title reveal">Контакты</h1>
+          <div class="contacts-layout">
+            <div class="contacts-text reveal" id="contacts-text">Загрузка контактов…</div>
+            <div class="reveal">
+              <div id="map" role="region" aria-label="Карта: МХАТ имени Чехова"></div>
+            </div>
+          </div>
+
+          <article class="contact-form reveal">
+            <h2 class="section__title section__title--left" style="margin-bottom: 20px">Обратная связь</h2>
+            <form id="feedback-form" novalidate>
+              <label for="feedback-name">Имя <span aria-hidden="true">*</span></label>
+              <input type="text" id="feedback-name" name="name" required autocomplete="name" />
+              <span class="error-msg" id="err-name">Укажите имя</span>
+
+              <label for="feedback-email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="feedback-email" name="email" required autocomplete="email" />
+              <span class="error-msg" id="err-email">Введите корректный email</span>
+
+              <label for="feedback-subject">Тема <span aria-hidden="true">*</span></label>
+              <input type="text" id="feedback-subject" name="subject" required />
+              <span class="error-msg" id="err-subject">Укажите тему</span>
+
+              <label for="feedback-message">Сообщение <span aria-hidden="true">*</span></label>
+              <textarea id="feedback-message" name="message" required></textarea>
+              <span class="error-msg" id="err-message">Напишите сообщение</span>
+
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="site-footer__brand">МХАТ имени А.П.&nbsp;Чехова</p>
+          <p class="footer-contacts" id="footer-contacts">Загрузка контактов…</p>
+        </div>
+        <p><a href="index.html">На главную</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/map.js" defer></script>
+  </body>
+</html>

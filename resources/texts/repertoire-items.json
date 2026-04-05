@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Три сестры",
+    "genre": "Драма",
+    "duration": "3 ч 20 мин",
+    "prices": {
+      "parterre": "3500 ₽",
+      "amphitheater": "2500 ₽",
+      "balcony": "1500 ₽"
+    },
+    "description": "Бессмертная пьеса А.П. Чехова о мечтах и разочарованиях",
+    "image": "performance-1.jpg"
+  },
+  {
+    "title": "Чайка",
+    "genre": "Комедия",
+    "duration": "2 ч 40 мин",
+    "prices": {
+      "parterre": "3000 ₽",
+      "amphitheater": "2200 ₽",
+      "balcony": "1300 ₽"
+    },
+    "description": "История о любви, искусстве и поиске себя",
+    "image": "performance-2.jpg"
+  },
+  {
+    "title": "Вишнёвый сад",
+    "genre": "Комедия",
+    "duration": "3 ч",
+    "prices": {
+      "parterre": "3200 ₽",
+      "amphitheater": "2400 ₽",
+      "balcony": "1400 ₽"
+    },
+    "description": "Последняя пьеса Чехова о прощании с прошлым",
+    "image": "theater-hall.jpg"
+  }
+]

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О театре — МХАТ имени Чехова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="about">
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+      <div class="page-loader__spinner" role="status" aria-label="Загрузка"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="resources/images/logo.png" width="56" height="56" alt="Логотип МХАТ имени Чехова" loading="eager" />
+          <span class="site-logo__text">МХАТ имени А.П.&nbsp;Чехова</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html" data-nav="home">Главная</a></li>
+            <li><a class="nav__link" href="repertoire.html" data-nav="repertoire">Репертуар</a></li>
+            <li><a class="nav__link" href="about.html" data-nav="about">О театре</a></li>
+            <li><a class="nav__link" href="contacts.html" data-nav="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title reveal">О театре</h1>
+          <div class="text-block reveal">
+            <p id="about-theater-text">Загрузка…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--white)">
+        <div class="container">
+          <h2 class="section__title section__title--left reveal">История</h2>
+          <article class="text-block reveal">
+            <p id="history-text">Загрузка истории…</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title reveal">Руководство</h2>
+          <div class="leadership">
+            <article class="leadership-card reveal">
+              <p class="leadership-card__role">Художественный руководитель</p>
+              <p class="leadership-card__name">Алексей Смирнов</p>
+              <p>Курирует художественную политику театра и сохранение традиций МХАТ.</p>
+            </article>
+            <article class="leadership-card reveal">
+              <p class="leadership-card__role">Директор</p>
+              <p class="leadership-card__name">Мария Волкова</p>
+              <p>Организационное и финансовое развитие, работа с партнёрами и зрителями.</p>
+            </article>
+            <article class="leadership-card reveal">
+              <p class="leadership-card__role">Главный режиссёр</p>
+              <p class="leadership-card__name">Дмитрий Орлов</p>
+              <p>Руководит постановочной деятельностью и творческими лабораториями.</p>
+            </article>
+          </div>
+          <div class="reveal" style="max-width: 400px; margin: 0 auto">
+            <img
+              src="resources/images/director.jpg"
+              alt="Портрет для раздела о руководстве театра"
+              width="600"
+              height="800"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section achievements">
+        <div class="container">
+          <h2 class="section__title reveal">Достижения и особенности</h2>
+          <ul class="achievements__list">
+            <li class="reveal">Более 125 лет сценической истории и школы актёрского мастерства.</li>
+            <li class="reveal">Родоначальник системы Станиславского в мировом театре.</li>
+            <li class="reveal">Репертуар от классики Чехова до современной драматургии.</li>
+            <li class="reveal">Международные гастроли и фестивальные участия.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title reveal">Фотогалерея</h2>
+          <p class="text-block reveal" style="text-align: center; margin-bottom: 24px">
+            Нажмите на снимок, чтобы открыть в полном размере.
+          </p>
+          <div class="gallery" id="photo-gallery">
+            <button type="button" data-full="resources/images/performance-1.jpg" aria-label="Открыть фото: Три сестры">
+              <img src="resources/images/performance-1.jpg" alt="Сцена из спектакля Три сестры" loading="lazy" width="800" height="600" />
+            </button>
+            <button type="button" data-full="resources/images/performance-2.jpg" aria-label="Открыть фото: Чайка">
+              <img src="resources/images/performance-2.jpg" alt="Сцена из спектакля Чайка" loading="lazy" width="800" height="600" />
+            </button>
+            <button type="button" data-full="resources/images/theater-hall.jpg" aria-label="Открыть фото: Зрительный зал">
+              <img src="resources/images/theater-hall.jpg" alt="Зрительный зал театра" loading="lazy" width="800" height="600" />
+            </button>
+            <button type="button" data-full="resources/images/hero-image.jpg" aria-label="Открыть фото: Фасад и афиша">
+              <img src="resources/images/hero-image.jpg" alt="Театральная афиша и атмосфера МХАТ" loading="lazy" width="1600" height="900" />
+            </button>
+            <button type="button" data-full="resources/images/director.jpg" aria-label="Открыть фото: Режиссёрская работа">
+              <img src="resources/images/director.jpg" alt="За кулисами и режиссёрская работа" loading="lazy" width="600" height="800" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
+      <div class="modal__content">
+        <button type="button" class="modal__close" id="gallery-modal-close" aria-label="Закрыть">&times;</button>
+        <img src="" alt="" id="gallery-modal-img" />
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="site-footer__brand">МХАТ имени А.П.&nbsp;Чехова</p>
+          <p class="footer-contacts" id="footer-contacts">Загрузка контактов…</p>
+        </div>
+        <p><a href="contacts.html">Полные контакты и карта</a></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
